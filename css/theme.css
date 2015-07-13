@@ -1,0 +1,43 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+/* Navigation style */
+
+.navbar-inverse {
+	background-image: linear-gradient(to bottom, #DE2910 0, #B41007 100%);
+	border-color: #666666;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFDE00 !important;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #FFDE00;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+/* Utilities */
+
+.padding {
+  padding-top: 12px;
+}

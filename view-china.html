@@ -1,0 +1,72 @@
+<!-- masthead -->
+<div class="jumbotron">
+  <h2 class="jumbotron--title">China</h2>
+  <p class="jumbotron--sub-title">We've been researching China's App market...</p>
+</div><!-- /masthead -->
+
+<div class="container  main-content">
+
+    <!-- comment form -->
+    <form method="post" id="hoist" class="form-horizontal" role="form">
+      <h4>...and it's big! If you'd like a free copy of our findings, drop us your name and email address below and we'll send it on over.</h4>          
+      <br>
+      <input type="hidden" name="hid" value="54d3235ae21f4603009063dd">
+      <div class="form-group">
+        <label for="name" class="col-12  col-lg-2  control-label">Name</label>
+        <div class="col-12  col-lg-10">
+          <input type="text" class="form-control" name="name" id="name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-12  col-lg-2  control-label">Email</label>
+        <div class="col-12  col-lg-10">
+          <input type="email" class="form-control" name="email" id="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-12  col-lg-2">&nbsp;</div>
+        <div class="col-12  col-lg-10">
+          <button type="submit" class="btn btn--green">Send</button>
+        </div>
+      </div>
+    </form><!-- /comment form -->
+
+    <div id="contactsuccess" style="display: none;">
+      <h4>Great! We'll be in touch very soon...</h4>
+    </div>
+
+    <script>
+
+      $(function() {
+
+        $("#name").focus();
+
+        $("#hoist").submit(function(e) {
+
+          // prevent the form post
+          e.preventDefault();
+
+          var data = {};
+          $("#hoist").serializeArray().map(function(item) {
+              data[item.name] = item.value;
+          });
+
+          $.ajax({
+            type: 'POST',
+            url: 'http://hoi.st/api/forms',
+            data: data
+          })
+          .done(function() {
+
+              $("#hoist").hide();
+              $("#contactsuccess").show();
+
+          });
+
+        });
+
+      });
+
+    </script>
+
+</div>
