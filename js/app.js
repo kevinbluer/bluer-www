@@ -10,6 +10,7 @@ bluerApp.config(function($routeProvider){
     .when( '/friends', { controller: 'FriendsControlller', templateUrl: 'view-friends.html' } )
     .when( '/contact', { controller: 'ContactControlller', templateUrl: 'view-contact.html' } )
     .when( '/china', { controller: 'ChinaControlller', templateUrl: 'view-china.html' } )
+    .when( '/research', { controller: 'ResearchControlller', templateUrl: 'view-research.html' } )
     .otherwise( { redirectTo: '/' } );
 })
 
