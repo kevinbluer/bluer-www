@@ -11,6 +11,7 @@ bluerApp.config(function($routeProvider){
     .when( '/contact', { controller: 'ContactControlller', templateUrl: 'view-contact.html' } )
     .when( '/china', { controller: 'ChinaControlller', templateUrl: 'view-china.html' } )
     .when( '/research', { controller: 'ResearchControlller', templateUrl: 'view-research.html' } )
+    .when( '/hongkongjs', { controller: 'HongKongJSSignupControlller', templateUrl: 'view-hongkongjs-signup.html' } )
     .otherwise( { redirectTo: '/' } );
 })
 
@@ -36,4 +37,7 @@ bluerApp.config(function($routeProvider){
 })
 
 .controller('ChinaControlller', function($scope) {
+})
+
+.controller('HongKongJSSignupControlller', function($scope) {
 });
