@@ -7,6 +7,7 @@ bluerApp.config(function($routeProvider){
     .when( '/training', { controller: 'TrainingControlller', templateUrl: 'view-training.html' } )
     .when( '/courses', { controller: 'CoursesControlller', templateUrl: 'view-courses.html' } )
     .when( '/courses/successful-mobile-web', { controller: 'CoursesControlller', templateUrl: 'view-courses-mobile-web.html' } )
+    .when( '/courses/successful-mobile-web-2', { controller: 'Courses2Controlller', templateUrl: 'view-courses-mobile-web-2.html' } )
     .when( '/friends', { controller: 'FriendsControlller', templateUrl: 'view-friends.html' } )
     .when( '/contact', { controller: 'ContactControlller', templateUrl: 'view-contact.html' } )
     .when( '/china', { controller: 'ChinaControlller', templateUrl: 'view-china.html' } )
@@ -22,6 +23,9 @@ bluerApp.config(function($routeProvider){
 })
 
 .controller('CoursesControlller', function($scope) {
+})
+
+.controller('Courses2Controlller', function($scope) {
 })
 
 .controller('CoursesMobileWebControlller', function($scope) {
